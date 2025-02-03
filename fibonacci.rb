@@ -3,6 +3,8 @@ def fibonacci(number)
   return fibonacci(number - 1) + fibonacci(number - 2)
 end
 
-puts fibonacci(10)
+puts "Which fibonacci number do you want?"
+index = gets.chomp.to_i
+puts "The fibonacci number at index #{index} is #{fibonacci(index)}"
 
 
